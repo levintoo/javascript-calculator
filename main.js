@@ -13,11 +13,11 @@ class Calculator{
     delete(){
 
     }
-    appendNumber(){
-        this.currentOperand = Number
+    appendNumber(number){
+        this.currentOperand = number
 
     }
-    chooseOperation(){
+    chooseOperation(operation){
 
     }
     compute(){
@@ -28,13 +28,14 @@ class Calculator{
     }
 }
 
+
 const numberButtons = document.querySelectorAll(['data-number'])
 const operationButtons = document.querySelectorAll(['data-operation'])
 const equalsButton = document.querySelector(['data-equals'])
 const deleteButton = document.querySelector(['data-clear'])
 const allClearButton = document.querySelector(['data-all-clear'])
-const previousOperandTextelement = document.querySelector(['data-previous-data'])
-const currentOperandTextelement = document.querySelector(['data-current-data'])
+const previousOperandTextelement = document.querySelector(['data-pervious-operand'])
+const currentOperandTextelement = document.querySelector(['data-current-operand'])
 
 const calculator = new Calculator (previousOperandTextelement, currentOperandTextelement)
 
